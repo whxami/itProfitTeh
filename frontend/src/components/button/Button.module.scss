@@ -1,0 +1,15 @@
+@import "@shared/colors/colors.scss";
+
+
+.button{
+  padding: 10px;
+  margin-left: 10px;
+  border-radius: 10px;
+  background-color: $mainGray;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+  &:hover{
+    background-color: $hoverGray;
+  }
+}

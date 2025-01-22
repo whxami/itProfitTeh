@@ -1,0 +1,21 @@
+@import "@shared/colors/colors.scss";
+
+.form{
+  display: flex;
+  flex-direction: column;
+  background: #282938;
+  width: 30%;
+  gap: 15px;
+  padding:20px;
+  border-radius: 10px;
+}
+
+.error{
+  margin:5px 5px 0 5px;
+  color:$errorColor;
+}
+
+.success{
+  color:$successColor;
+  margin:5px 5px 0 5px;
+}

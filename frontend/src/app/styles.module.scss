@@ -1,0 +1,19 @@
+@import "@shared/colors/colors.scss";
+
+.app{
+  padding-top: 20px;
+  background-color: $gray;
+  height: 100vh;
+}
+
+.form{
+  display: flex;
+  justify-content: center;
+}
+
+
+.modalContent{
+  display: flex;
+  flex-direction: column;
+  gap:15px;
+}

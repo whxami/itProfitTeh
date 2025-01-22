@@ -1,0 +1,16 @@
+@import "@shared/colors/colors.scss";
+
+.input {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid $mainGray;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 15px;
+  background: $mainGray;
+  color: $lightGray;
+  &::placeholder {
+    color:$gray;
+  }
+  resize: vertical;
+}
