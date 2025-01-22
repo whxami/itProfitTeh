@@ -1,6 +1,7 @@
 import React, {FC, ReactNode, useEffect} from 'react';
 import ReactDOM from 'react-dom';
 import styles from './Modal.module.scss';
+import Button from "@/components/button/Button";
 
 interface ModalProps {
     visible: boolean;
@@ -34,6 +35,7 @@ const Modal: FC<ModalProps> = ({ visible, setVisible, children }) => {
         <div className={classes.join(' ')} onClick={()=> setVisible(false)}>
             <div className={styles.modalContent} onClick ={(e)=> e.stopPropagation()}>
                 {children}
+                <Button onClick={()=> setVisible(false)}>Close Modal</Button>
             </div>
         </div>
     )

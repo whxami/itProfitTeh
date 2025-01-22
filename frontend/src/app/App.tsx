@@ -17,14 +17,11 @@ function App() {
     };
     return (
         <div className={styles.app}>
-            <div>
-                <Button onClick={openModal}>Open Modal</Button>
-            </div>
+            <Button onClick={openModal}>Open Modal</Button>
             <Modal visible={isModalOpen} setVisible={closeModal}>
                 <div className={styles.modalContent}>
                     <h1>Hello, this is a modal!</h1>
                     <p>You can close it by clicking the button, the overlay, or pressing the Esc key.</p>
-                    <Button onClick={closeModal}>Close Modal</Button>
                 </div>
             </Modal>
             <div className={styles.form}>
